@@ -14,7 +14,7 @@ Usage
    environment variable. (Please replace the URL and file names with the
    latest version. You can find the link on https://syncthing.net .)
    ```shell
-   $ curl -khttps://github.com/syncthing/syncthing/releases/download/v0.11.9/syncthing-linux-arm-v0.11.9.tar.gz
+   $ curl -k https://github.com/syncthing/syncthing/releases/download/v0.11.9/syncthing-linux-arm-v0.11.9.tar.gz
    $ tar -zxf syncthing-linux-arm-v0.11.9.tar.gz 
    $ cd syncthing-linux-arm-v0.11.9
    $ cp syncthing /usr/bin/
