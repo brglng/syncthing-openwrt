@@ -9,10 +9,10 @@ Usage
 
 1. Login to your OpenWrt device via SSH.
 
-2. Download and extract the tarball, and copy the syncthing binary to
-   `/usr/bin` or any other location that are in your `PATH` environment
-   variable. (Please replace the URL and file names with the latest version.
-   You can find the link on https://syncthing.net)
+2. Download and extract the Syncthing tarball, and copy the syncthing
+   executable to `/usr/bin` or any other location that are in your `PATH`
+   environment variable. (Please replace the URL and file names with the
+   latest version. You can find the link on https://syncthing.net .)
    ```shell
    $ curl -khttps://github.com/syncthing/syncthing/releases/download/v0.11.9/syncthing-linux-arm-v0.11.9.tar.gz
    $ tar -zxf syncthing-linux-arm-v0.11.9.tar.gz 
@@ -31,7 +31,7 @@ Usage
    ```
    You can press Ctrl-C to stop it.
 
-4. If you don't want the Syncthing Web GUI be accessible from WAN, you can
+4. If you don't want the Syncthing Web GUI to be accessible from WAN, you can
    skip 5 and 6.
 
 5. Modify the Syncthing configuration file.
