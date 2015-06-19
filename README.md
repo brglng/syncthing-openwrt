@@ -1,8 +1,8 @@
 # syncthing-openwrt
 Init script and usage for ARM based OpenWrt devices.
 
-This document is only applicable for devices with an ARM chip, and only tested
-with OpenWrt version BarrierBreaker 14.07.
+This document is only applicable for devices with an ARM chip, and is only
+tested on OpenWrt BarrierBreaker 14.07.
 
 Usage
 =====
@@ -11,7 +11,8 @@ Usage
 
 2. Download and extract the tarball, and copy the syncthing binary to
    `/usr/bin` or any other location that are in your `PATH` environment
-   variable. (Please replace the URL and file names with the latest version.)
+   variable. (Please replace the URL and file names with the latest version.
+   You can find the link on https://syncthing.net)
    ```shell
    $ curl -khttps://github.com/syncthing/syncthing/releases/download/v0.11.9/syncthing-linux-arm-v0.11.9.tar.gz
    $ tar -zxf syncthing-linux-arm-v0.11.9.tar.gz 
