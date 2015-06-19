@@ -5,7 +5,7 @@ START=99
 STOP=99
 
 start() {
-        service_start /usr/bin/syncthing 2>&1 | logger &
+        service_start /usr/bin/syncthing 2>&1 | logger -t syncthing &
 }
 
 stop() {
