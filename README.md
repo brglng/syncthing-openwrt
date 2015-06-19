@@ -11,7 +11,7 @@ Usage
 
 2. Download and extract the tarball, and copy the syncthing binary to
    `/usr/bin` or any other location that are in your `PATH` environment
-   variable.
+   variable. (Please replace the URL and file names with the latest version.)
    ```shell
    $ curl -khttps://github.com/syncthing/syncthing/releases/download/v0.11.9/syncthing-linux-arm-v0.11.9.tar.gz
    $ tar -zxf syncthing-linux-arm-v0.11.9.tar.gz 
@@ -35,7 +35,7 @@ Usage
 
 5. Modify the Syncthing configuration file.
    ```shell
-   vi ~/.config/syncthing
+   vi ~/.config/syncthing/config.xml
    ```
    Look for a section that looks like this:
    ```xml
