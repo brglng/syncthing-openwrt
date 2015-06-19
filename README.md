@@ -51,15 +51,16 @@ Usage
    </gui>
    ```
 
-6. Open the port 8384 for WAN. Add the following in `/etc/config/firewall`:
+6. Open TCP port 8384 to WAN. Add the following lines in
+   `/etc/config/firewall`:
    ```
    config rule
-    	option enabled '1'
-    	option target 'ACCEPT'
-    	option src 'wan'
-    	option proto 'tcp'
-    	option dest_port '8384'
-    	option name 'Syncthing Web'
+            option enabled '1'
+            option target 'ACCEPT'
+            option src 'wan'
+            option proto 'tcp'
+            option dest_port '8384'
+            option name 'Syncthing Web'
    ```
 
 7. Download `/etc/init.d/syncthing` from this repository and copy it to
@@ -80,3 +81,33 @@ Usage
 10. If you have allowed access to your Syncthing Web GUI from WAN, make sure
     to turn on "GUI Authentication Password" and "Use HTTPS for GUI" in the
     settings.
+
+11. Open ports 20022/TCP and 21025/UDP to WAN, and set up port forward for
+    port 20022/TCP. Add the following lines in `/etc/config/firewall`:
+    ```
+    config rule
+             option target 'ACCEPT'
+             option src 'wan'
+             option proto 'tcp'
+             option dest_port '22000'
+             option name 'Syncthing TCP'
+    
+    config rule
+             option enabled '1'
+             option target 'ACCEPT'
+             option src 'wan'
+             option proto 'udp'
+             option dest_port '21025'
+             option name 'Syncthing UDP'
+    
+    config redirect
+             option enabled '1'
+             option target 'DNAT'
+             option src 'wan'
+             option dest 'lan'
+             option proto 'tcp'
+             option src_dport '22000'
+             option dest_ip '192.168.1.1'
+             option dest_port '22000'
+             option name 'Syncthing'
+    ```
