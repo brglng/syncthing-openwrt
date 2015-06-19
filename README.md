@@ -40,25 +40,25 @@ Usage
    Look for a section that looks like this:
    ```xml
    <gui enabled="true" tls="false">
-       <address>127.0.0.1:8384</address>
+      <address>127.0.0.1:8384</address>
    </gui>
    ```
    Change it to:
    ```xml
    <gui enabled="true" tls="false">
-       <address>0.0.0.0:8384</address>
+      <address>0.0.0.0:8384</address>
    </gui>
    ```
 
 6. Open the port 8384 for WAN. Add the following in `/etc/config/firewall`:
    ```
    config rule
-   	option enabled '1'
-   	option target 'ACCEPT'
-   	option src 'wan'
-   	option proto 'tcp'
-   	option dest_port '8384'
-   	option name 'Syncthing Web'
+    	option enabled '1'
+    	option target 'ACCEPT'
+    	option src 'wan'
+    	option proto 'tcp'
+    	option dest_port '8384'
+    	option name 'Syncthing Web'
    ```
 
 7. Download `/etc/init.d/syncthing` from this repository and copy it to
