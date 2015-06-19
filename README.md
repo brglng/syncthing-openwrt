@@ -74,7 +74,7 @@ Usage
    $ /etc/init.d/syncthing start
    ```
 
-9. Open http://<your OpenWrt device address>:8384 on your browser.
+9. Open http://your-openwrt-device-address:8384 on your browser.
 
 10. If you have allowed access to your Syncthing Web GUI from WAN, make sure
     to turn on "GUI Authentication Password" and "Use HTTPS for GUI" in the
