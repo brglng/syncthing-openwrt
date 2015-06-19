@@ -36,7 +36,7 @@ Usage
 
 5. Modify the Syncthing configuration file.
    ```shell
-   vi ~/.config/syncthing/config.xml
+   $ vi ~/.config/syncthing/config.xml
    ```
    Look for a section that looks like this:
    ```xml
