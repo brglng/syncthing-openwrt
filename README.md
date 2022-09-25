@@ -4,7 +4,7 @@ Init script and usage for ARM based OpenWrt devices.
 This document is only applicable for devices with an ARM chip, and is only
 tested on OpenWrt BarrierBreaker 14.07.
 
-**NOTE:** As of 2021, OpenWrt has native Syncthing GUI provided as a package. You are recommended to install it under the Software page in OpenWrt's Web UI, instead of following this document. (See [#1](/issues/1))
+**NOTE:** As of 2021, OpenWrt has native Syncthing GUI provided as a package. You are recommended to install it under the Software page in OpenWrt's Web UI, instead of following this document. (See [#1](https://github.com/brglng/syncthing-openwrt/issues/1))
 
 Usage
 =====
